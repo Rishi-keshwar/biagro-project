@@ -21,9 +21,9 @@ export default function Dashboard() {
 
     const loadData = async () => {
       try {
-        const roverRes = await axios.get("http://localhost:5000/rover");
-        const farmRes = await axios.get("http://localhost:5000/farm");
-        const ngoRes = await axios.get("http://localhost:5000/ngo");
+        const roverRes = await axios.get("https://biagro-project.onrender.com/rover");
+        const farmRes = await axios.get("https://biagro-project.onrender.com/farm");
+        const ngoRes = await axios.get("https://biagro-project.onrender.com/ngo");
 
         setRover(roverRes.data);
         setFarm(farmRes.data);

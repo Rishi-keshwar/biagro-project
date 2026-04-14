@@ -10,7 +10,7 @@ export default function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post("http://localhost:5000/auth/login", {
+      const res = await axios.post("https://biagro-project.onrender.com/auth/login", {
         username,
         password
       });
@@ -28,7 +28,7 @@ export default function Login() {
   };
 
   const handleRegister = async () => {
-    await axios.post("http://localhost:5000/auth/register", {
+    await axios.post("https://biagro-project.onrender.com/auth/register", {
       username,
       password
     });
